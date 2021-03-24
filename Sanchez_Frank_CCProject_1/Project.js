@@ -1,9 +1,25 @@
-function setup(){
-	createCanvas(500, 500);
-	background(0);
+let r;
+
+
+function setup() {
+	createCanvas(800, 800);
+	background(100);
+	r = new Rover(100, 100);
+
+
 }
 
-function draw(){
-	fill(255);
-	ellipse(width/2, height/2, 50, 50);
+function draw() {
+	// ellipse(mouseX, mouseY, 20, 20);
+	
+	// if(mouseX <= 300 && mouseY <= 300){// && mouseIsPressed){
+	// r.update();
+	r.display();
+	r.update();
+
+	// }
 }
+
+// class Rover
+
+// class Moon
