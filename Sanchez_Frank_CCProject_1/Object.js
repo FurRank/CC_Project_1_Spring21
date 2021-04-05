@@ -20,13 +20,13 @@ class Objects{
 
 	display(){
 		// fill(255,0, 0);
-		if(keyIsPressed){
-			stroke(0);
-			fill(36, 100, 185);
-			ellipse(this.position.x, this.position.y, 70, 40);
-			fill(209, 219, 75, 150);
-			rect(this.position.x-17.5, this.position.y-40, 35, 35);	
-		}
+	
+		stroke(0);
+		fill(36, 100, 185);
+		ellipse(this.position.x, this.position.y, 70, 40);
+		fill(209, 219, 75, 150);
+		rect(this.position.x-17.5, this.position.y-40, 35, 35);	
+		
 
 	}
 

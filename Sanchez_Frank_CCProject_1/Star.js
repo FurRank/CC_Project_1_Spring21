@@ -9,7 +9,7 @@ class Star{
 
 	display(){
 		if(mouseIsPressed){
-			fill(255, 255, 0);
+			fill(255, 255, 0, 100);
 			strokeWeight(1);
 			stroke(0);
 			beginShape();
@@ -25,12 +25,6 @@ class Star{
 			vertex(this.xPos-3.5, this.yPos - 5);
 			endShape(CLOSE);
 		}
-	}
-
-
-	flicker(){
-
-
 	}
 
 }
