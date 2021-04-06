@@ -12,34 +12,19 @@ class Mountain{
 		// bottom of moutain
 		fill(168, 90, 0);
 		beginShape();
-
 		curveVertex(0, 500);
 		curveVertex(0, 500);
-
-		// curveVertex(300, 150);
 		curveVertex(280, 200);
-
 		curveVertex(300, 300);
-
-		// curveVertex(300, 350);
-
-		// curveVertex(290, 360);
-
 		curveVertex(280, 370);
-
-		// curveVertex(260, 390);
 		curveVertex(240, 410);
 		curveVertex(230, 430);
 		curveVertex(210, 450);
-
 		curveVertex(130, 600);
-		
-
-
 		curveVertex(0, height);
 		curveVertex(0, height);
 		endShape();
-
+		
 		strokeWeight(3);
 
 		// top of mountain
@@ -47,17 +32,13 @@ class Mountain{
 		beginShape();
 		curveVertex(0, 250);
 		curveVertex(0, 250);
-
 		curveVertex(50, 260);
 		curveVertex(300, 190);
-
 		curveVertex(200, 450);
-
 		curveVertex(0, 650);
 		curveVertex(0, 650);
 		endShape();
 
-		// Ocean
 
 
 	}

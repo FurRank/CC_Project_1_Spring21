@@ -5,6 +5,7 @@ class Rover{
 		this.colorR = 255;
 		this.colorG = 255;
 		this.colorB = 255;
+		this.dim = 200;
 	}
 	
 	update(){
@@ -12,13 +13,20 @@ class Rover{
 			this.colorR = 255;
 			this.colorG = 0;
 			this.colorB = 0;
+			noStroke();
+			fill(this.colorR, this.colorG, this.colorB, this.dim);
+			ellipse(600, 100, 10, 10);
+			ellipse(615, 100, 10, 10);
+			this.dim--;
 		}else{
 			this.colorR = 255;
 			this.colorG += 5;
 			this.colorB += 5;
+			this.dim = 200;
 		}
 	}
 	
+
 	display(){
 
 		stroke(0);
@@ -33,9 +41,7 @@ class Rover{
 		rect(this.xPos+65, this.yPos-80, 30, 90);
 		fill(0);
 		rect(this.xPos+50, this.yPos-100, 60, 30);
-
 		pop();
-
 
 		push();
 		// Top of Rover
@@ -61,6 +67,9 @@ class Rover{
 		pop();
 
 		// Antenna
+		// Side note: it's somehow not alligned with the
+		// body of the rover, so I was not able to move the
+		// rover in general since they would go in different directions
 		push();
 		fill(255);
 		strokeWeight(1);
@@ -79,19 +88,5 @@ class Rover{
 		ellipse(this.xPos-204, this.yPos-150, 50, 50);
 		pop();
 
-
-
 	}
 }
-
-// function touchStarted(){
-// 	if(mouseIsPressed){
-// 		fill(255,255,0);
-// 		rect(100, 100, 100, 100);
-// 	}	
-// }
-
-// function touchReleased(){
-// 	fill(127, 127, 127);
-// 	rect(100, 100, 100, 100);
-// }

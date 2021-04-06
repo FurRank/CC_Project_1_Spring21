@@ -1,6 +1,6 @@
 class Objects{
-	constructor(xPos, yPos){
-		this.position = new createVector(xPos, yPos);
+	constructor(xPos){
+		this.position = new createVector(xPos, 100);
 		this.velocity = new createVector(2, 0);
 		this.acceleration = new createVector(0.001, 0);
 		this.topspeed = 10;
@@ -15,13 +15,15 @@ class Objects{
 	checkEdges(){
 		if(this.position.x > width){
 			this.position.x = -50;
+			let r = random(50, 200);
+			this.position.y = r;
 		}
+		
 	}
 
 	display(){
-		// fill(255,0, 0);
-	
 		stroke(0);
+		strokeWeight(3);
 		fill(36, 100, 185);
 		ellipse(this.position.x, this.position.y, 70, 40);
 		fill(209, 219, 75, 150);
